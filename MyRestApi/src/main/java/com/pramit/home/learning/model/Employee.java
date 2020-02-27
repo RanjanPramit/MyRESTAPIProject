@@ -2,54 +2,33 @@ package com.pramit.home.learning.model;
 
 public class Employee {
 	
-	private int employeeID;
-	private String firstName;
-	private String lastName;
-	private String emailID;
-	private int salary;
-	
-	public int getEmployeeID() {
-		return employeeID;
+	private int id;
+	private String name;
+	private int age;
+	public int getId() {
+		return id;
 	}
-	public void setEmployeeID(int employeeID) {
-		this.employeeID = employeeID;
+	public void setId(int id) {
+		this.id = id;
 	}
-	public String getFirstName() {
-		return firstName;
+	public String getName() {
+		return name;
 	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setName(String name) {
+		this.name = name;
 	}
-	public String getLastName() {
-		return lastName;
+	public int getAge() {
+		return age;
 	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setAge(int age) {
+		this.age = age;
 	}
-	public String getEmailID() {
-		return emailID;
-	}
-	public void setEmailID(String emailID) {
-		this.emailID = emailID;
-	}
-	public int getSalary() {
-		return salary;
-	}
-	public void setSalary(int salary) {
-		this.salary = salary;
-	}
-	public Employee(int employeeID, String firstName, String lastName, String emailID, int salary) {
+	public Employee(int id, String name, int age) {
 		super();
-		this.employeeID = employeeID;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.emailID = emailID;
-		this.salary = salary;
+		this.id = id;
+		this.name = name;
+		this.age = age;
 	}
-	@Override
-	public String toString() {
-		return "Employee [employeeID=" + employeeID + ", firstName=" + firstName + ", lastName=" + lastName
-				+ ", emailID=" + emailID + ", salary=" + salary + "]";
-	}
+	
 	
 }
